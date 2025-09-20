@@ -28,3 +28,33 @@ Generation Mexico - Corte 58 | 39.3 - SA-PLD2 - Práctica de Conversión de Temp
 - Recuerda convertir a number el valor solicitado por prompt o por un input y verificar que sea un número para evitar errores en tu programa.
 - Recuerda que para mostrar mensajes por consola o por el DOM, debes crear un archivo HTML y enlazar tu script.
 - Para ayudarte puedes desarrollar un algoritmo y el pseudocódigo.
+
+# 🗺️ <i>Planificacion</i> ✍️
+
+## 🎨 Diagrama de flujo 🖌️
+![Diagrama de flujo](./diagrama-de-flujo.svg)
+
+## 📝 Pseudocódigo ✍️
+```
+INICIO
+
+REPETIR
+    MOSTRAR "Ingrese la temperatura en grados Celsius: "
+    LEER entrada
+
+    SI entrada ES NUMÉRICA ENTONCES
+        temperatura ← CONVERTIR entrada A NÚMERO
+        valido ← VERDADERO
+    SINO
+        MOSTRAR "⚠️ Error: Debe ingresar un número."
+        valido ← FALSO
+    FIN SI
+HASTA QUE valido = VERDADERO
+
+kelvin ← temperatura + 273.15
+fahrenheit ← (temperatura * 9 / 5) + 32
+
+MOSTRAR "Grados Kelvin: " + kelvin
+MOSTRAR "Grados Fahrenheit: " + fahrenheit
+
+FIN

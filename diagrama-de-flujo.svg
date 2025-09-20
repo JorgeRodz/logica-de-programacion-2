@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="362pt" height="441pt" viewBox="0.00 0.00 362.00 441.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 436.8)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-436.8 357.66,-436.8 357.66,4 -4,4"/>
+<!-- inicio -->
+<g id="node1" class="node">
+<title>inicio</title>
+<ellipse fill="lightblue" stroke="black" cx="201.3" cy="-414.8" rx="28.11" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="201.3" y="-411.2" font-family="Arial" font-size="12.00">Inicio</text>
+</g>
+<!-- pedir -->
+<g id="node2" class="node">
+<title>pedir</title>
+<polygon fill="none" stroke="black" points="282.34,-359.8 120.27,-359.8 120.27,-323.8 282.34,-323.8 282.34,-359.8"/>
+<text xml:space="preserve" text-anchor="middle" x="201.3" y="-338.2" font-family="Arial" font-size="12.00">Solicitar temperatura en °C</text>
+</g>
+<!-- inicio&#45;&gt;pedir -->
+<g id="edge1" class="edge">
+<title>inicio-&gt;pedir</title>
+<path fill="none" stroke="black" d="M201.3,-396.61C201.3,-389.03 201.3,-379.9 201.3,-371.34"/>
+<polygon fill="black" stroke="black" points="204.8,-371.34 201.3,-361.34 197.8,-371.34 204.8,-371.34"/>
+</g>
+<!-- validar -->
+<g id="node3" class="node">
+<title>validar</title>
+<polygon fill="lightyellow" stroke="black" points="125.3,-286.8 0,-268.8 125.3,-250.8 250.61,-268.8 125.3,-286.8"/>
+<text xml:space="preserve" text-anchor="middle" x="125.3" y="-265.2" font-family="Arial" font-size="12.00">¿Es un número válido?</text>
+</g>
+<!-- pedir&#45;&gt;validar -->
+<g id="edge2" class="edge">
+<title>pedir-&gt;validar</title>
+<path fill="none" stroke="black" d="M182.91,-323.61C172.92,-314.29 160.45,-302.64 149.67,-292.57"/>
+<polygon fill="black" stroke="black" points="152.27,-290.2 142.57,-285.93 147.49,-295.32 152.27,-290.2"/>
+</g>
+<!-- error -->
+<g id="node4" class="node">
+<title>error</title>
+<polygon fill="lightcoral" stroke="black" points="353.66,-190.8 202.95,-190.8 202.95,-154 353.66,-154 353.66,-190.8"/>
+<text xml:space="preserve" text-anchor="middle" x="278.3" y="-176" font-family="Arial" font-size="12.00">Mostrar mensaje de error</text>
+<text xml:space="preserve" text-anchor="middle" x="278.3" y="-161.6" font-family="Arial" font-size="12.00">Volver a solicitar</text>
+</g>
+<!-- validar&#45;&gt;error -->
+<g id="edge3" class="edge">
+<title>validar-&gt;error</title>
+<path fill="none" stroke="black" d="M148.21,-253.67C172.37,-238.76 210.86,-215.01 239.72,-197.2"/>
+<polygon fill="black" stroke="black" points="241.53,-200.2 248.2,-191.97 237.85,-194.25 241.53,-200.2"/>
+<text xml:space="preserve" text-anchor="middle" x="214.95" y="-220.2" font-family="Times,serif" font-size="14.00">No</text>
+</g>
+<!-- calcular -->
+<g id="node5" class="node">
+<title>calcular</title>
+<polygon fill="none" stroke="black" points="185.01,-198 17.6,-198 17.6,-146.8 185.01,-146.8 185.01,-198"/>
+<text xml:space="preserve" text-anchor="middle" x="101.3" y="-183.2" font-family="Arial" font-size="12.00">Convertir a:</text>
+<text xml:space="preserve" text-anchor="middle" x="101.3" y="-168.8" font-family="Arial" font-size="12.00">Kelvin = °C + 273.15</text>
+<text xml:space="preserve" text-anchor="middle" x="101.3" y="-154.4" font-family="Arial" font-size="12.00">Fahrenheit = (°C × 9/5) + 32</text>
+</g>
+<!-- validar&#45;&gt;calcular -->
+<g id="edge5" class="edge">
+<title>validar-&gt;calcular</title>
+<path fill="none" stroke="black" d="M121.01,-250.92C118.08,-239.37 114.07,-223.62 110.44,-209.34"/>
+<polygon fill="black" stroke="black" points="113.86,-208.6 108.01,-199.77 107.08,-210.32 113.86,-208.6"/>
+<text xml:space="preserve" text-anchor="middle" x="123.55" y="-220.2" font-family="Times,serif" font-size="14.00">Sí</text>
+</g>
+<!-- error&#45;&gt;pedir -->
+<g id="edge4" class="edge">
+<title>error-&gt;pedir</title>
+<path fill="none" stroke="black" d="M278.77,-191.03C278.66,-214.34 275.85,-256.04 259.3,-286.8 253.43,-297.73 244.49,-307.66 235.38,-315.93"/>
+<polygon fill="black" stroke="black" points="233.18,-313.21 227.85,-322.36 237.73,-318.54 233.18,-313.21"/>
+</g>
+<!-- imprimir -->
+<g id="node6" class="node">
+<title>imprimir</title>
+<polygon fill="none" stroke="black" points="164.66,-109.8 37.95,-109.8 37.95,-73 164.66,-73 164.66,-109.8"/>
+<text xml:space="preserve" text-anchor="middle" x="101.3" y="-95" font-family="Arial" font-size="12.00">Imprimir resultados</text>
+<text xml:space="preserve" text-anchor="middle" x="101.3" y="-80.6" font-family="Arial" font-size="12.00">(Kelvin y Fahrenheit)</text>
+</g>
+<!-- calcular&#45;&gt;imprimir -->
+<g id="edge6" class="edge">
+<title>calcular-&gt;imprimir</title>
+<path fill="none" stroke="black" d="M101.3,-146.4C101.3,-138.51 101.3,-129.71 101.3,-121.55"/>
+<polygon fill="black" stroke="black" points="104.8,-121.74 101.3,-111.74 97.8,-121.74 104.8,-121.74"/>
+</g>
+<!-- fin -->
+<g id="node7" class="node">
+<title>fin</title>
+<ellipse fill="lightblue" stroke="black" cx="101.3" cy="-18" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="101.3" y="-14.4" font-family="Arial" font-size="12.00">Fin</text>
+</g>
+<!-- imprimir&#45;&gt;fin -->
+<g id="edge7" class="edge">
+<title>imprimir-&gt;fin</title>
+<path fill="none" stroke="black" d="M101.3,-72.75C101.3,-65.23 101.3,-56.25 101.3,-47.82"/>
+<polygon fill="black" stroke="black" points="104.8,-47.96 101.3,-37.96 97.8,-47.96 104.8,-47.96"/>
+</g>
+</g>
+</svg>
